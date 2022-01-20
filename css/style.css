@@ -217,6 +217,7 @@ main{
 	font-weight: bold;
 	font-size: 1.5rem;
 	text-transform: uppercase;
+	text-align: center;
 
 }
 .link_meet{
@@ -234,6 +235,7 @@ main{
 }
 .list_meet{
 	display: flex;
+	justify-content: center;
 }
 .icon_meet{
 	display: flex;
@@ -590,11 +592,17 @@ textarea{
 .media{
 	text-align: center;
 }
+
+.meet_card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 /*адаптив*/
 
 @media (min-width: 641px) and (max-width: 1099px){
 
-.title{
+.title, .services_title, .meet_title, .form_title{
 	font-size: 1.5rem;
 	}
 .container_services{
@@ -602,7 +610,7 @@ flex-direction: column;
 }
 .card {
    flex-direction: row;
-    min-height: 300px;
+    min-height: 150px;
     padding: 0 20px;
 
 }
@@ -610,29 +618,177 @@ flex-direction: column;
 	flex-direction: column;
 }
 .container_got{
-	flex-direction: column;
+	flex-wrap: wrap;
+}
+.profi_card{
+	width: 50%;
 }
 .portfolio_container {
+	margin-top:30px;
 	flex-direction: column;
+	align-items: center;
+}
+.portfolio_card{
+	width: 100%;
+}
+.portfolio_card:nth-child(2n+2) {
+    margin-left: 0;
+}
+.portfolio_card:nth-child(n+2) {
+    margin-top: 20px;
+}
+.btn_portfolio {
+	margin-top:30px;
 }
 .poeple_container{
-	flex-direction: column;
+	
 	max-width: 1100px;
+}
+.poeple_card{
+	justify-content: center;
+	width: 100%;
+}
+.poeple_card:nth-child(n+2) {
+    margin-top: 20px;
 }
 .form_footer{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 .media_form{
 	display: flex;
 	flex-direction: column;
+	width: 30%;
 }
-.input{
+.form_text{
+	width: 60%;
+	margin-left:10%;
+}
+input{
 	max-width: 200px;
+	font-size: 0.8rem;
+}
+input:nth-child(n+2) {
+    margin-top: 20px;
+	margin-left:0;
 }
 textarea{
-width: 300px;
+width: 350px;
+margin-top:0;
+min-height: 155px;
 }
+
+
+
+.header_low{
+	margin:0;
+}
+.services, .meet, .got, .portfolio, .poeple, .form, .footer{
+	padding:60px 20px;
+}
+.p_services, .p_meet, .p_form{
+margin-top:20px;
+}
+.media{
+	max-width: 60%;
+}
+.card:nth-child(n+2) {
+    margin-left: 0;
+}
+.people_card{
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	min-height: 250px;
+}
+.meet_card{
+	width: 30%;
+
+}
+.meet_list{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+.link_meet{
+	text-align: center;
+}
+.list_portfolio{
+	margin-top:30px;
+}
+.p_form{
+	font-size: 1rem;
+	text-align: center;
+}
+.form{
+	min-height: 0;
+}
+.btn{
+	width: 100%;
+	
+}
+.footer_item{
+	font-size: 1rem;
+}
+
+}
+@media (max-width:640px){
+
+.container_services, .container_meet, .container_got, 
+.portfolio_container, .poeple_container {
+	flex-direction: column;
+}
+.form_footer{
+	display: flex;
+	flex-direction: column;
+}
+textarea{
+	width: 200px;
+}
+.poeple_blok{
+	width: 100%;
+}
+input{
+	width: 150px;
+}
+.portfolio_card{
+	width: 100%;
+}
+.img_card{
+	width: 100vw;
+min-width: 100vw;
+}
+
+.menu{
+	display: none;
+}
+.header_low{
+	margin:0;
+}
+.services, .meet, .got, .portfolio, .poeple, .form, .footer{
+	padding:0;
+}
+.footer_list{
+	flex-direction: column;
+}
+.item_portfolio{
+	flex-direction: column;
+}
+.card:nth-child(n+2) {
+	margin-left:0;
+}
+.portfolio_card:nth-child(2n+2) {
+    margin-left: 0;
+}
+
+
+
+
+
+
 
 }
 
