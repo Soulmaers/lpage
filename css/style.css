@@ -274,6 +274,11 @@ margin-left:12px;
 	font-size: 50px;
 	color: #3c4761;
 }
+.profi_span{
+	vertical-align: baseline;
+	font-size: 32px;
+  	 color: #3c4761;
+}
 .profi_web{
 	background-image: url(../img/web.png);
 }
@@ -303,11 +308,7 @@ background-image: url(../img/ui.png);
  	align-items: center;
  	margin-top:87px;
  }
- .profi_span{
- 	vertical-align: sub;
- 	font-size: 32px;
-	color: #3c4761;
- }
+ 
  .profi_low{
  	margin-top:30px;
  	font-size: 24px;
